@@ -1,0 +1,38 @@
+title: "11ty Long Reads"
+description: "A 11ty Long Reads by Adam Dj Brett"
+language: "en"
+locale: en_US
+image: /logos.png
+favicon: /logos.png
+url: "http://localhost:8080"
+
+metasocial: 
+ - facebook: "https://www.facebook.com/"
+ - twitteruser: "@username"
+ - twitter: "https://x.com/user"
+
+toc_widget_title: On This Page
+
+navbar: 
+ - nav: Home
+   url: /
+ - nav: About
+   url: /about/
+ - nav: Blog
+   url: /blog/
+ - nav: Search
+   url: /search/
+
+download:
+ text: Download
+ url: https://github.com/adamdjbrett/11ty-long-reads
+
+footer: 
+ text1: Designed by
+ text2: Adam Dj Brett
+ text2_url: https://adamdjbrett.com
+
+author: 
+ name: "Jane Doe"
+ email: "info@example.com"
+ url: "/about/"

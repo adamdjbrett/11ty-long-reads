@@ -1,0 +1,19 @@
+{% set css %} {% include "styles/index.css" %} {% endset %}
+<style>{{ css | cssmin | safe }}</style>
+<nav class="container mt-5">
+<div class="row p-3">
+<div class="col-md-2 col-12 p-3 text-center">
+<a href="{{metadata.url}}" class="navbar-brand "><strong>
+{{metadata.title}}</strong></a>
+</div>
+<div class="col-md-8 col-12 p-3">
+<div class="row text-center justify-content-center">
+{% for n in metadata.navbar %}<a href="{{n.url}}" class="nav-link col-md-3 col-3">{{n.nav}}</a>{% endfor %}
+</div>
+</div>
+<div class="col-md-2 col-12 p-3"><strong>
+<a href="{{metadata.download.url}}" class="nav-link text-center">{{metadata.download.text}}</a>
+</strong>
+</div>
+</div>
+</nav>

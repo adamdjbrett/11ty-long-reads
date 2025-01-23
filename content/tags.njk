@@ -1,0 +1,11 @@
+---
+title: Tags
+description: Tags Page Description
+layout: post.njk
+---
+<ul>
+{% for tag in collections | getKeys | filterTagList %}
+{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>
