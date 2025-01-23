@@ -2,8 +2,8 @@ title: "11ty Long Reads"
 description: "A 11ty Long Reads by Adam Dj Brett"
 language: "en"
 locale: en_US
-image: /logo.svg
-favicon: /logo.svg
+image: /logos.png
+favicon: /logos.png
 url: "http://localhost:8080"
 
 metasocial: 
