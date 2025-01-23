@@ -1,0 +1,67 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const fontSelector = document.getElementById('font-selector');
+  const fontSize = document.getElementById('font-size');
+  const lineHeight = document.getElementById('line-height');
+  const colorPicker = document.getElementById('color-picker');
+  const colorBackground = document.getElementById('color-background');
+
+  function saveToLocalStorage(key, value) {
+    localStorage.setItem(key, value);
+  }
+
+  function getFromLocalStorage(key, defaultValue) {
+    return localStorage.getItem(key) || defaultValue;
+  }
+
+  document.body.style.fontFamily = getFromLocalStorage('fontFamily', 'Arial');
+  document.body.style.fontSize = getFromLocalStorage('fontSize', '16px');
+  document.body.style.lineHeight = getFromLocalStorage('lineHeight', '1.5');
+  document.body.style.color = getFromLocalStorage('textColor', '#000000');
+  document.body.style.backgroundColor = getFromLocalStorage('backgroundColor', '#ffffff');
+
+  fontSelector.value = getFromLocalStorage('fontFamily', 'Arial');
+  fontSize.value = getFromLocalStorage('fontSize', '16px').replace('px', '');
+  lineHeight.value = getFromLocalStorage('lineHeight', '1.5');
+  colorPicker.value = getFromLocalStorage('textColor', '#000000');
+  colorBackground.value = getFromLocalStorage('backgroundColor', '#ffffff');
+
+  fontSelector.addEventListener('change', function() {
+    document.body.style.fontFamily = this.value;
+    saveToLocalStorage('fontFamily', this.value);
+  });
+
+  fontSize.addEventListener('change', function() {
+    let size = this.value;
+    if (!size.endsWith('px')) {
+      size += 'px';
+    }
+    document.body.style.fontSize = size;
+    saveToLocalStorage('fontSize', size);
+  });
+
+  fontSize.addEventListener('input', function() {
+    let size = this.value;
+    if (!size.endsWith('px')) {
+      size += 'px';
+    }
+    document.body.style.fontSize = size;
+  });
+
+  lineHeight.addEventListener('change', function() {
+    document.body.style.lineHeight = this.value;
+    saveToLocalStorage('lineHeight', this.value);
+  });
+
+  colorPicker.addEventListener('input', function() {
+    document.body.style.color = this.value;
+    saveToLocalStorage('textColor', this.value);
+  });
+
+  colorBackground.addEventListener('input', function() {
+    document.body.style.backgroundColor = this.value;
+    saveToLocalStorage('backgroundColor', this.value);
+  });
+});
+
+</script>
