@@ -1,5 +1,5 @@
-<div class="fixed-top text-center p-1">
-<button class="btn btn-dark small rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCustom" aria-expanded="false" aria-controls="collapseCustom">
+<div class="fixed-top text-center p-1 trans">
+<button class="btn btn-dark small rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCustom" aria-expanded="false" aria-controls="collapseCustom" aria-label="Customize">
 Customize
 </button>
 <div class="collapse p-3" id="collapseCustom">
@@ -20,7 +20,7 @@ Customize
 <label for="font-selector" class="form-label">Font Family</label>
 </div>
 <div class="col-md-7 col-6">
-<select id="font-selector"  class="form-select form-select-sm">
+<select id="font-selector" aria-label="Font Family" class="form-select form-select-sm">
 <option value="Arial, sans-serif">Arial</option>
 <option value="Times New Roman, serif">Times New Roman</option>
 <option value="Courier New, monospace">Courier New</option>
@@ -46,7 +46,7 @@ Customize
 <label for="font-size">Font Size</label>
 </div>
 <div class="col-md-5 col-4">
-<input type="number" class="form-control form-control-sm" id="font-size" value="16" min="8" max="56">
+<input type="number" class="form-control form-control-sm" aria-label="Font Size" id="font-size" value="16" min="8" max="56">
 </div>
 </div>
 </div>      
@@ -59,7 +59,7 @@ Customize
 <label for="font-size">Line Height</label>
 </div>
 <div class="col-md-5 col-4">
-<input type="number" class="form-control form-control-sm" id="line-height" value="1.3" min="1" max="12">
+<input type="number" class="form-control form-control-sm" id="line-height" aria-label="Line Height" value="1.3" min="1" max="12">
 </div>
 </div>
 </div>
@@ -73,7 +73,7 @@ Customize
 Font Color</label>
 </div>
 <div class="col-md-5 col-4">
-<input type="color" class="form-control form-control-color form-control-sm" id="color-picker" value="#000000">
+<input type="color" class="form-control form-control-color form-control-sm" aria-label="Font Color" id="color-picker" value="#000000">
 </div>
 </div>
 </div>
@@ -86,7 +86,7 @@ Font Color</label>
 <label for="color-background">Background</label>
 </div>
 <div class="col-md-5 col-4">
-<input type="color" class="form-control form-control-color form-control-sm" id="color-background" value="#ffffff">
+<input type="color" class="form-control form-control-color form-control-sm" aria-label="Background Color" id="color-background" value="#ffffff">
 </div>
 </div>
 </div>

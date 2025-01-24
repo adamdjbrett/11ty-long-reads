@@ -1,5 +1,5 @@
 ---
-title: "Lhasa Apso"
+title: "Lhasa Apso - The Lhasa Apso is a non-sporting dog breed originating in Tibet."
 description: "The Lhasa Apso is a non-sporting dog breed originating in Tibet."
 tags: 
  - dog
