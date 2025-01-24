@@ -389,3 +389,27 @@ pre code {
 .highlight pre {
   margin-bottom: 0;
 }
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 5px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 999;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 2px solid #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: left 0.3s ease;
+}
+
+.skip-to-content:focus {
+  left: 5px;
+  width: auto;
+  height: auto;
+}
+
+.trans {background-color:transparent;}

@@ -18,6 +18,14 @@ Project develope by [Adam Dj Brett](https://adamdjbrett.com)
 + Footer Notes
 + More...
 
+Desktop Test
+
+![Desktop Peformance](desktop.png)
+
+Mobile Test
+
+![Mobile Peformance](mobile.png)
+
 If you need help or have a project about your site, you can contact me.
 
 + Adam DJ brett
