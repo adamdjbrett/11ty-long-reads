@@ -1,7 +1,7 @@
 {
 	"name": "11ty-long-reads",
 	"version": "0.0.1",
-	"description": "11ty Long reads by Adam Dj Brett",
+	"description": "11ty Long reads by Adam DJ Brett",
 	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
@@ -16,7 +16,7 @@
 		"url": "git://github.com/adamdjbrett/11ty-long-reads.git"
 	},
 	"author": {
-		"name": "Adam Dj Brett",
+		"name": "Adam DJ Brett",
 		"email": "info@adamdjbrett.com",
 		"url": "https://adamdjbrett.com/"
 	},
