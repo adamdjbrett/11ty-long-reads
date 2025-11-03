@@ -1,6 +1,6 @@
 # 11ty Long Reads
 
-Project develope by [Adam DJ Brett](https://adamdjbrett.com)
+Project developed by [Adam DJ Brett](https://adamdjbrett.com)
 
 + Minimalist Concept
 + Clean Design
